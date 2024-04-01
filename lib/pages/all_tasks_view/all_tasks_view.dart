@@ -317,8 +317,9 @@ class _AllTasksViewState extends State<AllTasksView> {
                                         colorBold = Constants.white;
 
                                         return GestureDetector(
-                                          onTap: () {
-                                            utilStore.setidTask(index);
+                                          onTap: () async {
+                                            await utilStore.showTask(
+                                                utilStore.tasks[index].id!);
                                             QR.to('showTask');
                                           },
                                           child: Padding(
@@ -330,8 +331,14 @@ class _AllTasksViewState extends State<AllTasksView> {
                                                 motion: const ScrollMotion(),
                                                 children: [
                                                   SlidableAction(
-                                                    onPressed: (_) {
+                                                    onPressed: (_) async {
+                                                      utilStore.setIndex(
+                                                          utilStore.tasks[index]
+                                                              .id!);
                                                       utilStore.setidTask(
+                                                          utilStore.tasks[index]
+                                                              .id!);
+                                                      await utilStore.showTask(
                                                           utilStore.tasks[index]
                                                               .id!);
                                                       QR.to('showTask');
@@ -343,7 +350,10 @@ class _AllTasksViewState extends State<AllTasksView> {
                                                         .remove_red_eye_outlined,
                                                   ),
                                                   SlidableAction(
-                                                    onPressed: (_) {
+                                                    onPressed: (_) async {
+                                                      await utilStore.showTask(
+                                                          utilStore.tasks[index]
+                                                              .id!);
                                                       utilStore.setEdit(true);
                                                       print('index / task.id');
                                                       print(index);

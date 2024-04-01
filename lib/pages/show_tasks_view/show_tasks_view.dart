@@ -130,7 +130,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                       ),
                                       Observer(builder: (_) {
                                         return Text(
-                                          "        ${utilStore.tasks[utilStore.index].name}",
+                                          "        ${utilStore.task!.name}",
                                           style: TextStyle(
                                             height: 1,
                                             fontSize: 8.sp,
@@ -168,8 +168,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                     Padding(
                                       padding: EdgeInsets.all(9.sp),
                                       child: Text(
-                                        utilStore.tasks[utilStore.index].name
-                                            .toString(),
+                                        utilStore.task!.name.toString(),
                                         style: TextStyle(
                                           height: 1,
                                           fontSize: 18.sp,
@@ -194,7 +193,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                             padding:
                                                 EdgeInsets.only(bottom: 8.0),
                                             child: Text(
-                                              'Descrição: ${utilStore.tasks[utilStore.index].description ?? 'sem informação'}',
+                                              'Descrição: ${utilStore.task!.description ?? 'sem informação'}',
                                               style: TextStyle(
                                                 height: 1,
                                                 fontSize: 16.sp,
@@ -206,7 +205,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                             padding:
                                                 EdgeInsets.only(bottom: 8.0),
                                             child: Text(
-                                              'Data final: ${utilStore.tasks[utilStore.index].deadline ?? 'sem informação'}',
+                                              'Data final: ${utilStore.task!.deadline ?? 'sem informação'}',
                                               style: TextStyle(
                                                 height: 1,
                                                 fontSize: 16.sp,
@@ -218,7 +217,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                             padding:
                                                 EdgeInsets.only(bottom: 8.0),
                                             child: Text(
-                                              'Status: ${utilStore.tasks[utilStore.index].status ?? 'sem informação'}',
+                                              'Status: ${utilStore.task!.status ?? 'sem informação'}',
                                               style: TextStyle(
                                                 height: 1,
                                                 fontSize: 16.sp,
@@ -255,7 +254,7 @@ class _ShowTasksViewState extends State<ShowTasksView> {
                                             padding:
                                                 EdgeInsets.only(bottom: 8.0),
                                             child: Text(
-                                              'Tag: ${utilStore.tasks[utilStore.index].tag ?? 'sem informação'}',
+                                              'Tag: ${utilStore.task!.tag ?? 'sem informação'}',
                                               style: TextStyle(
                                                 height: 1,
                                                 fontSize: 16.sp,

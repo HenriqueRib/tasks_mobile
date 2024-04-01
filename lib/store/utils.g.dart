@@ -321,8 +321,8 @@ mixin _$Utils on UtilsBase, Store {
       AsyncAction('UtilsBase.showTask', context: context);
 
   @override
-  Future showTask() {
-    return _$showTaskAsyncAction.run(() => super.showTask());
+  Future showTask(dynamic id) {
+    return _$showTaskAsyncAction.run(() => super.showTask(id));
   }
 
   late final _$UtilsBaseActionController =

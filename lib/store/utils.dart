@@ -422,13 +422,15 @@ abstract class UtilsBase with Store {
   }
 
   @action
-  showTask() async {
+  showTask(id) async {
     try {
       var data = {
-        'id': idTask,
+        'id': id,
       };
-      await (await dioInstance()).get("/tasks/task/$idTask", data: data);
-
+      Response? res =
+          await (await dioInstance()).get("/tasks/task/$id", data: data);
+      Task u = Task.fromJson(res.data['task'] ?? {});
+      setTask(u);
       ResponseFunction response = ResponseFunction();
       loading = false;
       response.success = true;
