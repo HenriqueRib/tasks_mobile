@@ -50,39 +50,52 @@ Arquitetura em MobX para genrenciamento de estado.
 
 ## Uso
 
-Telas - Login e Cadastro de usuário
-![Login](images/_1.png)
-![Cadastro](images/_2.png)
+## Telas - Login e Cadastro de usuário
 
-Tela - Home
-![home](images/_3.png)
+<img src="images/_1.png" alt="Login" width="200"/>
+<img src="images/_2.png" alt="Cadastro" width="200"/>
 
-Tela - Perfil
-![perfil](images/_4.png)
+## Tela - Home
 
-Tela - Sobre a empresa do aplicativo (Informações ficticias sobre a TASKS)
-![Sobre a empresa do aplicativo](images/_11.png)
+<img src="images/_3.png" alt="home" width="200"/>
 
-Tela - Lista de tarefas
-![lista de tarefas](images/_5.png)
+## Tela - Perfil
 
-Tela - Adicionar tarefa
-![adicionar tarefa](images/_12.png)
+<img src="images/_4.png" alt="perfil" width="200"/>
+
+## Tela - Sobre a empresa do aplicativo (Informações ficticias sobre a TASKS)
+
+<img src="images/_11.png" alt="Sobre a empresa do aplicativo " width="200"/>
+
+## Tela - Lista de tarefas
+
+<img src="images/_5.png" alt="lista de tarefas" width="200"/>
+
+## Tela - Adicionar tarefa
+
+<img src="images/_12.png" alt="adicionar tarefa" width="200"/>
 
 Tela - Visualizar tarefa
-![visualizar tarefa](images/_6.png)
 
-Telas - Listagem de Tarefas - botão deletar tarefa
-![botão deletar tarefa](images/_7.png)
+---
 
-Tela - Listagem de Tarefas - botão visualizar ou editar ou deleter tarefa
-![botão visualizar ou editar ou deleter tarefa](images/_8.png)
+<img src="images/_6.png" alt="visualizar tarefa" width="200"/>
 
-Tela - Listagem de Tarefas - Mensagem de sucesso de cadastro de nova tarefa em pop up mais direcionamento para listagem de tarefas
-![Mensagem de sucesso de cadastro de nova tarefa em pop up mais direcionamento para listagem de tarefas](images/_9.png)
+## Telas - Listagem de Tarefas - botão deletar tarefa
 
-Tela - Listagem de Tarefas - Mensagem de sucesso ao de deletar uma tarefa em pop up.
-![Mensagem de sucesso ao de deletar uma tarefa em pop up.](images/_10.png)
+<img src="images/_7.png" alt="botão deletar tarefa" width="200"/>
+
+## Tela - Listagem de Tarefas - botão visualizar ou editar ou deleter tarefa
+
+<img src="images/_8.png" alt="botão visualizar ou editar ou deleter tarefa" width="200"/>
+
+## Tela - Listagem de Tarefas - Mensagem de sucesso de cadastro de nova tarefa em pop up mais direcionamento para listagem de tarefas
+
+<img src="images/_9.png" alt="Mensagem de sucesso de cadastro de nova tarefa em pop up mais direcionamento para listagem de tarefas" width="200"/>
+
+## Tela - Listagem de Tarefas - Mensagem de sucesso ao de deletar uma tarefa em pop up.
+
+<img src="images/_10.png" alt="Mensagem de sucesso ao de deletar uma tarefa em pop up" width="200"/>
 
 ## Licença
 
